@@ -1,11 +1,23 @@
-var Trivia = [
-    "Who invented the World Wide Web?",
-    "Q: In bingo, what number is represented by “two little ducks”? A:22",
-    "In a search bar what does the www mean?",
-    "Pen"
+var triviaQuestions = [
+    "Q: Who invented the World Wide Web?",
+    "Q: In bingo, what number is represented by “two little ducks”?",
+    "Q: In a search bar what does the www mean?",
+    "Q: In which European city would you find the airport “Orly”"
 ];
-var randomTrivia = Math.floor(Math.random() * Trivia.length);
+var triviaAnswers = [
+    "A: Tim Berners Lee",
+    "A:22",
+    "A: World Wide Web",
+    "A: Paris"
+];
 function getTrivia() {
-    randomTrivia[Trivia];
+    questionOutput = document.getElementById('questionOutput');
+    currentTrivia = Math.floor(Math.random() * triviaQuestions.length);
+    questionOutput.innerText = triviaQuestions[currentTrivia];
+    answerOutput.innerText = "Press reveal again.";
 }
-
+function revealAnswer() {
+    answerOutput = document.getElementById('answerOutput');
+    answerOutput.innerText = triviaAnswers[currentTrivia]
+    
+}
