@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trivia Generator</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Generate me some trivia!</h1>
-    <p id="questionOutput">Press 'generate'</p>
-    <p id="answerOutput">Press 'reveal answer'</p>
-    <button onclick="getTrivia()">Generate</button>
-    <button onclick="revealAnswer()">Reveal Answer</button>
+    <h1 class="bg-purple-900 text-center text-white text-3xl font-mono p-2">Trivia Generator</h1>
+    <div class="m-6 text-xl"><p id="questionOutput" class="mb-4">Press 'generate'</p>
+    <p id="answerOutput">Press 'reveal answer'</p></div>
+    <button onclick="getTrivia()" class="p-1 m-4 ring-4 rounded-lg bg-green-400 ring-green-700">Generate</button>
+    <button onclick="revealAnswer()" class="p-1 ring-4 rounded-lg bg-green-400 ring-green-700">Reveal Answer</button>
     <script src="js/generator.js"></script>
 </body>
 </html>
