@@ -8,11 +8,13 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
+    <div class="justify-items-center">
     <h1 class="bg-purple-900 text-center text-white text-3xl font-mono p-2">Trivia Generator</h1>
     <div class="m-6 text-xl"><p id="questionOutput" class="mb-4">Press 'generate'</p>
     <p id="answerOutput">Press 'reveal answer'</p></div>
     <button onclick="getTrivia()" class="p-1 m-4 ring-4 rounded-lg bg-green-400 ring-green-700">Generate</button>
     <button onclick="revealAnswer()" class="p-1 ring-4 rounded-lg bg-green-400 ring-green-700">Reveal Answer</button>
     <script src="js/generator.js"></script>
+    </div>
 </body>
 </html>
